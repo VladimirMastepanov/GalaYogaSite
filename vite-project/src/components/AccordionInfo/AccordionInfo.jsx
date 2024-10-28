@@ -9,7 +9,7 @@ const AccordionInfo = () => {
 
 
   return (
-      <section className='accordion-container mx-auto' style={{ maxWidth: '800px' }}>
+      <section className='accordion-container mx-auto-section'>
         <div className="accordion rounded-2 shadow">
           <div className="accordion-item bg-secondary-subtle border border-dark border-opacity-10">
             <h2 className="accordion-header">

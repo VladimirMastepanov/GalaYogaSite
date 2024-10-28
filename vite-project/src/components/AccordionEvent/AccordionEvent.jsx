@@ -8,7 +8,7 @@ const AccordionEvent = () => {
 
 
   return (
-    <section className='accordion-section mx-auto bg-secondary-subtle rounded-3' style={{ maxWidth: '800px' }}>
+    <section className='accordion-section mx-auto-section bg-secondary-subtle rounded-3'>
       <div className='accordion-container mx-auto p-3'>
         <div className="accordion  shadow">
           <div className="accordion-item bg-secondary-subtle border-0">

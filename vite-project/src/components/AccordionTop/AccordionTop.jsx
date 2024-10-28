@@ -5,13 +5,19 @@ const AccordionTop = () => {
   const [showFirst, setShowFirst] = useState(false);
   const [showSecond, setShowSecond] = useState(false);
   const [showThird, setShowThird] = useState(false);
+  const [showFourth, setShowFourth] = useState(false);
+  const [showFifth, setShowFifth] = useState(false);
+  const [showSixth, setShowSixth] = useState(false);
 
   const handleToggleFirst = () => setShowFirst(!showFirst);
   const handleToggleSecond = () => setShowSecond(!showSecond)
   const handleToggleThird = () => setShowThird(!showThird)
+  const handleToggleFourth = () => setShowFourth(!showFourth)
+  const handleToggleFifth = () => setShowFifth(!showFifth)
+  const handleToggleSixth = () => setShowSixth(!showSixth)
 
   return (
-    <section className='accordion-section mx-auto bg-info-subtle rounded-3' style={{ maxWidth: '800px' }}>
+    <section className='accordion-section mx-auto-section bg-info-subtle rounded-3' >
       <div className='accordion-container mx-auto p-3'>
         <div className="accordion shadow">
           <div className="accordion-item bg-info-subtle">
@@ -58,12 +64,12 @@ const AccordionTop = () => {
           </div>
           <div className="accordion-item bg-info-subtle">
             <h2 className="accordion-header">
-              <button onClick={handleToggleThird} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <button onClick={handleToggleFourth} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Аккордеонный элемент #4
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" className={cn("accordion-collapse", "collapse", {
-              show: showThird
+              show: showFourth
             })}>
               <div className="accordion-body">
                 <strong>Это тело аккордеона третьего элемента.</strong>
@@ -72,12 +78,12 @@ const AccordionTop = () => {
           </div>
           <div className="accordion-item bg-info-subtle">
             <h2 className="accordion-header">
-              <button onClick={handleToggleThird} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <button onClick={handleToggleFifth} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Аккордеонный элемент #5
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" className={cn("accordion-collapse", "collapse", {
-              show: showThird
+              show: showFifth
             })}>
               <div className="accordion-body">
                 <strong>Это тело аккордеона третьего элемента.</strong>
@@ -86,12 +92,12 @@ const AccordionTop = () => {
           </div>
           <div className="accordion-item bg-info-subtle">
             <h2 className="accordion-header">
-              <button onClick={handleToggleThird} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <button onClick={handleToggleSixth} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Аккордеонный элемент #6
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" className={cn("accordion-collapse", "collapse", {
-              show: showThird
+              show: showSixth
             })}>
               <div className="accordion-body">
                 <strong>Это тело аккордеона третьего элемента.</strong>

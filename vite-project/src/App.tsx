@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import cn from 'classnames';
-import AccordionTop from './components/AccordionTop.jsx';
-import AccordionEvent from './components/AccordionEvent.jsx';
-import CarouselEvent from './components/CarouselEvent.jsx';
-import AccordionInfo from './components/AccordionInfo.jsx';
+import AccordionTop from './components/AccordionTop/AccordionTop.jsx';
+import AccordionEvent from './components/AccordionEvent/AccordionEvent.jsx';
+import CarouselEvent from './components/CarouselEvent/CarouselEvent.jsx';
+import AccordionInfo from './components/AccordionInfo/AccordionInfo.jsx';
+import BrakeLine from './components/BrakeLine/BrakeLine.jsx';
+
+
 
 const App = () => {
 
@@ -21,7 +24,7 @@ const App = () => {
 
       <main className='container'>
 
-        <section className='row justify-content-center'>
+        <section className='row justify-content-center mx-auto-section'>
           <div className='col-12 text-center'>
             <p> Чем я могу быть полезна</p>
           </div>
@@ -29,7 +32,7 @@ const App = () => {
 
         <AccordionTop />
 
-        <section className='row justify-content-center'>
+        <section className='row justify-content-center mx-auto-section'>
           <div className='col-12 text-center my-3'>
             <p> События </p>
           </div>
@@ -38,7 +41,7 @@ const App = () => {
         <AccordionEvent />
         <CarouselEvent />
 
-        <section className='row justify-content-center  mx-auto' style={{ maxWidth: '800px' }}>
+        <section className='row justify-content-center  mx-auto-section' >
           <div className='col-12 text-center'>
             <p> Ещё </p>
           </div>
@@ -48,12 +51,9 @@ const App = () => {
           </div>
         </section>
 
-        <section className='row justify-content-center'>
-          <div className='col-12 text-center border my-5 bg-secondary-subtle' style={{ maxWidth: '800px' }}>
-          </div>
-        </section>
+        <BrakeLine />
 
-        <section className='row justify-content-center'>
+        <section className='row justify-content-center mx-auto-section'>
           <div className='col-12 text-center my-0 p-0'>
             <h4> Обо мне </h4>
             <p>Мне 35 лет. С 24 лет практикую йогу.</p>
@@ -63,16 +63,22 @@ const App = () => {
 
         <AccordionInfo />
 
-        <section className='row justify-content-center p-4'>
+        <section className='row justify-content-center p-4 mx-auto-section'>
           <div className='col-12 text-center p-4'>
             <p>### Ещё одна карусель с фотками ###</p>
           </div>
         </section>
 
-        <section className='row justify-content-center p-0'>
-          <div className='col-12 text-center border bg-secondary-subtle' style={{ maxWidth: '800px' }}>
-          </div>
+        <BrakeLine />
+
+        <section className='row  justify-content-center my-5 mx-auto-section'>
+
+          <button className='col-5 me-5 btn bg-secondary-subtle shadow' type='button'>Telegram</button>
+          <button className='col-5  btn bg-secondary-subtle shadow' type='button'>WhatsApp</button>
+
         </section>
+
+
 
       </main>
 
