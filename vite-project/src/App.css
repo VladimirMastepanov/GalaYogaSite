@@ -1,15 +1,24 @@
-.mx-auto-section {
-  max-width: 800px;
+/* Базовые стили */
+.container {
+  width: 100%;
 }
 
-.btn {
-  font-weight: bold;
+.btn.bg-secondary-subtle.shadow {
+  font-weight: 600;
   border-radius: 8px;
-  padding: 10px 20px;
+  transition: all 0.2s ease;
 }
 
 .btn.bg-secondary-subtle.shadow:hover {
   background-color: rgba(108, 117, 125, 0.3);
   color: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 767.98px) {
+  .container {
+    /* padding-left: 16px !important;
+    padding-right: 16px !important; */
+  }
 }

@@ -17,12 +17,11 @@ const AccordionTop = () => {
   const handleToggleSixth = () => setShowSixth(!showSixth)
 
   return (
-    <section className='accordion-section mx-auto-section bg-info-subtle rounded-3' >
-      <div className='accordion-container mx-auto p-3'>
-        <div className="accordion shadow">
-          <div className="accordion-item bg-info-subtle">
+    <section className='accordion-section border p-3 rounded-3' >
+        <div className="accordion rounded-3  shadow">
+          <div className="accordion-item ">
             <h2 className="accordion-header">
-              <button onClick={handleToggleFirst} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded={showFirst} aria-controls="panelsStayOpen-collapseOne">
+              <button onClick={handleToggleFirst} className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded={showFirst} aria-controls="panelsStayOpen-collapseOne">
                 Аккордеонный элемент #1
               </button>
             </h2>
@@ -34,9 +33,9 @@ const AccordionTop = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item bg-info-subtle">
+          <div className="accordion-item ">
             <h2 className="accordion-header">
-              <button onClick={handleToggleSecond} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded={showSecond} aria-controls="panelsStayOpen-collapseTwo">
+              <button onClick={handleToggleSecond} className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded={showSecond} aria-controls="panelsStayOpen-collapseTwo">
                 Аккордеонный элемент #2
               </button>
             </h2>
@@ -48,9 +47,9 @@ const AccordionTop = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item bg-info-subtle">
+          <div className="accordion-item ">
             <h2 className="accordion-header">
-              <button onClick={handleToggleThird} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded={showThird} aria-controls="panelsStayOpen-collapseThree">
+              <button onClick={handleToggleThird} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded={showThird} aria-controls="panelsStayOpen-collapseThree">
                 Аккордеонный элемент #3
               </button>
             </h2>
@@ -62,9 +61,9 @@ const AccordionTop = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item bg-info-subtle">
+          <div className="accordion-item ">
             <h2 className="accordion-header">
-              <button onClick={handleToggleFourth} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <button onClick={handleToggleFourth} className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Аккордеонный элемент #4
               </button>
             </h2>
@@ -76,9 +75,9 @@ const AccordionTop = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item bg-info-subtle">
+          <div className="accordion-item ">
             <h2 className="accordion-header">
-              <button onClick={handleToggleFifth} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <button onClick={handleToggleFifth} className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Аккордеонный элемент #5
               </button>
             </h2>
@@ -90,9 +89,9 @@ const AccordionTop = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item bg-info-subtle">
+          <div className="accordion-item ">
             <h2 className="accordion-header">
-              <button onClick={handleToggleSixth} className="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <button onClick={handleToggleSixth} className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Аккордеонный элемент #6
               </button>
             </h2>
@@ -105,7 +104,6 @@ const AccordionTop = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   )
 };
