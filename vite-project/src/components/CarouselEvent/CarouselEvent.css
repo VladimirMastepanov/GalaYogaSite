@@ -1,0 +1,23 @@
+.mx-auto-section {
+  max-width: 800px;
+}
+
+.carousel-indicators button {
+  width: 6px;
+  height: 6px;
+  background-color: white; /* Белый цвет для индикатора */
+  border: none;
+  border-radius: 50%;
+  opacity: 0.8; /* Лёгкая прозрачность для неактивных индикаторов */
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 12px; /* Разделение между индикаторами */
+}
+
+.carousel-indicators button.active {
+  opacity: 1; /* Полная непрозрачность для активного индикатора */
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5); /* Полупрозрачная белая окантовка */
+}
+
+.carousel-inner img {
+  border-radius: 10px; /* или любое значение, которое тебе нравится */
+}

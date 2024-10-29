@@ -1,0 +1,15 @@
+.mx-auto-section {
+  max-width: 800px;
+}
+
+.btn {
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.btn.bg-secondary-subtle.shadow:hover {
+  background-color: rgba(108, 117, 125, 0.3);
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
