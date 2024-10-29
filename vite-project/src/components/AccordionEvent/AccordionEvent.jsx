@@ -8,12 +8,11 @@ const AccordionEvent = () => {
 
 
   return (
-    <section className='accordion-section mx-auto-section bg-secondary-subtle rounded-3'>
-      <div className='accordion-container mx-auto p-3'>
-        <div className="accordion  shadow">
-          <div className="accordion-item bg-secondary-subtle border-0">
+    <section className='accordion-section border p-3 rounded-3'>
+        <div className="accordion rounded-2 shadow">
+          <div className="accordion-item border-0">
             <h2 className="accordion-header">
-              <button onClick={handleToggleFirst} className="accordion-button collapsed bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded={showFirst} aria-controls="panelsStayOpen-collapseOne">
+              <button onClick={handleToggleFirst} className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded={showFirst} aria-controls="panelsStayOpen-collapseOne">
                 Аккордеонный элемент #1
               </button>
             </h2>
@@ -25,7 +24,6 @@ const AccordionEvent = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
   )

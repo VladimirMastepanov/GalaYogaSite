@@ -1,8 +1,8 @@
 import { useState } from "react";
 import cn from 'classnames';
-import './CarouselEvent.css';
+import './CarouselMain.css';
 
-const CarouselEvent = () => {
+const CarouselMain = () => {
   const [active, setActive] = useState(0);
 
   const handlePrev = () => setActive((prev) => (prev - 1 + 3) % 3);
@@ -28,13 +28,13 @@ const CarouselEvent = () => {
 
         <div className='carousel-inner rounded-4'>
           <div className={cn('carousel-item', { 'active': active === 0 })}>
-            <img src='../public/pic/carouselEvent/d1.jpg' className='d-block w-100' alt='холодец' />
+            <img src='../public/pic/carouselMain/b1.jpg' className='d-block w-100' alt='холодец' />
           </div>
           <div className={cn('carousel-item', { 'active': active === 1 })}>
-            <img src='../public/pic/carouselEvent/d2.jpg' className='d-block w-100' alt='...' />
+            <img src='../public/pic/carouselMain/b2.jpg' className='d-block w-100' alt='...' />
           </div>
           <div className={cn('carousel-item', { 'active': active === 2 })}>
-            <img src='../public/pic/carouselEvent/d3.jpg' className='d-block w-100' alt='...' />
+            <img src='../public/pic/carouselMain/b3.jpg' className='d-block w-100' alt='...' />
           </div>
         </div>
 
@@ -52,4 +52,4 @@ const CarouselEvent = () => {
   )
 };
 
-export default CarouselEvent;
+export default CarouselMain;
