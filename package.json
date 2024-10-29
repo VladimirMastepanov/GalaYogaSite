@@ -1,5 +1,5 @@
 {
-  "name": "reactnativesandbox",
+  "name": "GalaYogaSite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/VladimirMastepanov/reactNativeSandBox.git"
+    "url": "git+ssh://git@github.com/VladimirMastepanov/GalaYogaSite.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VladimirMastepanov/reactNativeSandBox/issues"
+    "url": "https://github.com/VladimirMastepanov/GalaYogaSite/issues"
   },
-  "homepage": "https://github.com/VladimirMastepanov/reactNativeSandBox#readme"
+  "homepage": "https://github.com/VladimirMastepanov/GalaYogaSite#readme"
 }
